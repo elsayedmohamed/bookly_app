@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/styles.dart';
+import 'book_rating.dart';
 
 class BestSellerListViewItem extends StatelessWidget {
   const BestSellerListViewItem({super.key});
@@ -15,6 +16,7 @@ class BestSellerListViewItem extends StatelessWidget {
         // GoRouter.of(context).push('/BookDetailsView');
 
         context.go('/bookDetailsView');
+
       },
       child: SizedBox(
         height: 100,
@@ -74,19 +76,7 @@ class BestSellerListViewItem extends StatelessWidget {
                             .copyWith(fontWeight: FontWeight.bold),
                       ),
                       const Spacer(),
-                      const Icon(
-                        FontAwesomeIcons.solidStar,
-                        color: Color(0xffFFDD4F),
-                      ),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      Text(
-                        '(2458)',
-                        style: Styles.textStyle14.copyWith(
-                          color: const Color(0xff707070),
-                        ),
-                      ),
+                      const BookRating(),
                     ],
                   ),
                 ],

@@ -12,6 +12,7 @@ class HomeViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: CustomScrollView(
+      
         slivers: [
           SliverToBoxAdapter(
             child: Column(
@@ -30,8 +31,11 @@ class HomeViewBody extends StatelessWidget {
             ),
           ),
        const SliverFillRemaining(
+       
             child: BestSellerListView(),
           ),   
+
+          
         ],
       ),
     );
