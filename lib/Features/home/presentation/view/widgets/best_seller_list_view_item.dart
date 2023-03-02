@@ -16,7 +16,6 @@ class BestSellerListViewItem extends StatelessWidget {
         // GoRouter.of(context).push('/BookDetailsView');
 
         context.go('/bookDetailsView');
-
       },
       child: SizedBox(
         height: 100,

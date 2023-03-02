@@ -1,4 +1,5 @@
 import 'package:bookly_app/Features/search/presentation/widgets/custom_search_text.dart';
+import 'package:bookly_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -12,8 +13,16 @@ class SearchViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           CustomSearchText(),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            'Search results',
+            style: Styles.textStyle16,
+          ),
           SizedBox(
             height: 10,
           ),
